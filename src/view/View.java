@@ -23,8 +23,8 @@ public class View {
     private void renderMenu(Menu menu, Inventory inventory){
         int drinkNumber = 1;
   	    System.out.println("Menu:");
-   	    for(int i = 0; i < menu.menu.length; i++){
-   		    System.out.println(drinkNumber + ", " + menu.menu[i].name + ", " + "$" + menu.menu[i].price(inventory.inventory) + ", " + menu.menu[i].availability);
+   	    for(int i = 0; i < menu.menu.size(); i++){
+   		    System.out.println(drinkNumber + ", " + menu.menu.get(i).name + ", " + "$" + menu.menu.get(i).price(inventory.inventory) + ", " + menu.menu.get(i).availability);
    		    drinkNumber += 1;
 	    }
     }

@@ -40,7 +40,7 @@ public class Barista {
     private void userInput(String input){
         if(input.equals("r") || input.equals("R")){
             restock();
-        } else if(input.matches("^\\d+$") && (Integer.valueOf(input) > 0 && Integer.valueOf(input) <= menu.menu.length)){
+        } else if(input.matches("^\\d+$") && (Integer.valueOf(input) > 0 && Integer.valueOf(input) <= menu.menu.size())){
             orderDrink(input);
         } else {
             view.renderInvalidChoice(input);
