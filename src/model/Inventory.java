@@ -18,10 +18,10 @@ public class Inventory {
     }
     
     public void useIngredients(Drink drink){
-        for(int i = 0; i < drink.recipe.length; i++){
+        for(int i = 0; i < drink.recipe.size(); i++){
             for(int i2 = 0; i2 < inventory.size(); i2++){
-                if(inventory.get(i2).ingredient == drink.recipe[i].name){
-                    inventory.get(i2).useIngredient(drink.recipe[i].unit);
+                if(inventory.get(i2).ingredient == drink.recipe.get(i).name){
+                    inventory.get(i2).useIngredient(drink.recipe.get(i).unit);
                 }
             }
         }

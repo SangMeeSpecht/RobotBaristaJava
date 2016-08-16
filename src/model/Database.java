@@ -18,38 +18,38 @@ public class Database {
     }
     
     public ArrayList<Drink> menu(){
-        Recipe[] cA = new Recipe[1];
-        cA[0] = new Recipe("Espresso", 3);
+    	ArrayList<Recipe> cA = new ArrayList<Recipe>();
+        cA.add(new Recipe("Espresso", 3));
         Drink caffeAmericano = new Drink("Caffe Americano", cA, true);
         
-        Recipe[] cL = new Recipe[2];
-        cL[0] = new Recipe("Espresso", 2);
-        cL[1] = new Recipe("Steamed Milk", 1);
+        ArrayList<Recipe> cL = new ArrayList<Recipe>();
+        cL.add(new Recipe("Espresso", 2));
+        cL.add(new Recipe("Steamed Milk", 1));
         Drink caffeLatte = new Drink("Caffe Latte", cL, true);
         
-        Recipe[] cM = new Recipe[4];
-        cM[0] = new Recipe("Espresso", 1);
-        cM[1] = new Recipe("Cocoa", 1);
-        cM[2] = new Recipe("Steamed Milk", 1);
-        cM[3] = new Recipe("Whipped Cream", 1);
+        ArrayList<Recipe> cM = new ArrayList<Recipe>();
+        cM.add(new Recipe("Espresso", 1));
+        cM.add(new Recipe("Cocoa", 1));
+        cM.add(new Recipe("Steamed Milk", 1));
+        cM.add(new Recipe("Whipped Cream", 1));
         Drink caffeMocha = new Drink("Caffe Mocha", cM, true);
       
-        Recipe[] cP = new Recipe[3];
-        cP[0] = new Recipe("Espresso", 2);
-        cP[1] = new Recipe("Steamed Milk", 1);
-        cP[2] = new Recipe("Foamed Milk", 1);
+        ArrayList<Recipe> cP = new ArrayList<Recipe>();
+        cP.add(new Recipe("Espresso", 2));
+        cP.add(new Recipe("Steamed Milk", 1));
+        cP.add(new Recipe("Foamed Milk", 1));
         Drink cappuccino = new Drink("Cappuccino", cP, true);
       
-        Recipe[] cF = new Recipe[3];
-        cF[0] = new Recipe("Coffee", 3);
-        cF[1] = new Recipe("Sugar", 1);
-        cF[2] = new Recipe("Cream", 1);
+        ArrayList<Recipe> cF = new ArrayList<Recipe>();
+        cF.add(new Recipe("Coffee", 3));
+        cF.add(new Recipe("Sugar", 1));
+        cF.add(new Recipe("Cream", 1));
         Drink coFfee = new Drink("Coffee", cF, true);
         
-        Recipe[] dC = new Recipe[3];
-        dC[0] = new Recipe("Decaf Coffee", 3);
-        dC[1] = new Recipe("Sugar", 1);
-        dC[2] = new Recipe("Cream", 1);
+        ArrayList<Recipe> dC = new ArrayList<Recipe>();
+        dC.add(new Recipe("Decaf Coffee", 3));
+        dC.add(new Recipe("Sugar", 1));
+        dC.add(new Recipe("Cream", 1));
         Drink deCafCoffee = new Drink("Decaf Coffee", dC, true);
         
         ArrayList<Drink> menu = new ArrayList<Drink>();
