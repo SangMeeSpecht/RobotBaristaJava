@@ -1,4 +1,5 @@
 package model;
+import java.util.ArrayList;
 
 public class Drink {
     public String name;
@@ -11,12 +12,12 @@ public class Drink {
 		this.availability = availability;
 	}
 	
-	public String price(Ingredient[] inventory){
+	public String price(ArrayList<Ingredient> inventory){
 	   Float price = 0f;
 	   for(int i = 0; i < recipe.length; i++){
-	      for(int x = 0; x < inventory.length; x++){
-	          if(recipe[i].name == inventory[x].ingredient){
-	               price += recipe[i].unit * inventory[x].price;
+	      for(int i2 = 0; i2 < inventory.size(); i2++){
+	          if(recipe[i].name == inventory.get(i2).ingredient){
+	               price += recipe[i].unit * inventory.get(i2).price;
 	          }
 	      } 
 	   }

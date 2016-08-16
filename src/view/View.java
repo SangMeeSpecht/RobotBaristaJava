@@ -31,8 +31,8 @@ public class View {
     
     private void renderInventory(Inventory inventory){
   	    System.out.println("Inventory:");
-   	    for(int i = 0; i < inventory.inventory.length; i++){
-   		    System.out.println(inventory.inventory[i].ingredient + ", " + inventory.inventory[i].count);
+   	    for(int i = 0; i < inventory.inventory.size(); i++){
+   		    System.out.println(inventory.inventory.get(i).ingredient + ", " + inventory.inventory.get(i).count);
 	    }
     }
 }

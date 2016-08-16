@@ -1,7 +1,8 @@
 package model;
+import java.util.ArrayList;
 
 public class Database {
-    public Ingredient[] inventory(){
+    public ArrayList<Ingredient> inventory(){
         Ingredient cocoa =        new Ingredient("Cocoa", 10, 0.90f);
         Ingredient coffee =       new Ingredient("Coffee", 10, 0.75f);
         Ingredient cream =        new Ingredient("Cream", 10, 0.25f);
@@ -12,16 +13,26 @@ public class Database {
         Ingredient sugar =        new Ingredient("Sugar", 10, 0.25f);
         Ingredient whippedCream = new Ingredient("Whipped Cream", 10, 1.00f);
         
-        Ingredient[] inventory = new Ingredient[9];
-        inventory[0] = cocoa;
-        inventory[1] = coffee;
-        inventory[2] = cream;
-        inventory[3] = decafCoffee;
-        inventory[4] = espresso;
-        inventory[5] = foamedMilk;
-        inventory[6] = steamedMilk;
-        inventory[7] = sugar;
-        inventory[8] = whippedCream;
+        ArrayList<Ingredient> inventory = new ArrayList<Ingredient>();
+        //Ingredient[] inventory = new Ingredient[9];
+        inventory.add(cocoa);
+        inventory.add(coffee);
+        inventory.add(cream);
+        inventory.add(decafCoffee);
+        inventory.add(espresso);
+        inventory.add(foamedMilk);
+        inventory.add(steamedMilk);
+        inventory.add(sugar);
+        inventory.add(whippedCream);
+//        inventory[0] = cocoa;
+//        inventory[1] = coffee;
+//        inventory[2] = cream;
+//        inventory[3] = decafCoffee;
+//        inventory[4] = espresso;
+//        inventory[5] = foamedMilk;
+//        inventory[6] = steamedMilk;
+//        inventory[7] = sugar;
+//        inventory[8] = whippedCream;
         
         return inventory;
     }

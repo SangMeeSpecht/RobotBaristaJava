@@ -23,9 +23,9 @@ public class Menu {
     public void disableDrinks(Inventory inventory){
         for(int i = 0; i < menu.length; i++){
             for(int i2 = 0; i2 < menu[i].recipe.length; i2++){
-                for(int i3 = 0; i3 < inventory.inventory.length; i3++){
-                    if(inventory.inventory[i3].ingredient == menu[i].recipe[i2].name){
-                        if(inventory.inventory[i3].count < menu[i].recipe[i2].unit){
+                for(int i3 = 0; i3 < inventory.inventory.size(); i3++){
+                    if(inventory.inventory.get(i3).ingredient == menu[i].recipe[i2].name){
+                        if(inventory.inventory.get(i3).count < menu[i].recipe[i2].unit){
                             menu[i].disableDrink();
                         }
                     }
