@@ -3,36 +3,26 @@ import java.util.ArrayList;
 
 public class Database {
     public ArrayList<Ingredient> inventory(){
-        Ingredient cocoa =        new Ingredient("Cocoa", 10, 0.90f);
-        Ingredient coffee =       new Ingredient("Coffee", 10, 0.75f);
-        Ingredient cream =        new Ingredient("Cream", 10, 0.25f);
-        Ingredient decafCoffee =  new Ingredient("Decaf Coffee", 10, 0.75f);
-        Ingredient espresso =     new Ingredient("Espresso", 10, 1.10f);
-        Ingredient foamedMilk =   new Ingredient("Foamed Milk", 10, 0.35f);
-        Ingredient steamedMilk =  new Ingredient("Steamed Milk", 10, 0.35f);
-        Ingredient sugar =        new Ingredient("Sugar", 10, 0.25f);
-        Ingredient whippedCream = new Ingredient("Whipped Cream", 10, 1.00f);
+//        Ingredient cocoa =        new Ingredient("Cocoa", 10, 0.90f);
+//        Ingredient coffee =       new Ingredient("Coffee", 10, 0.75f);
+//        Ingredient cream =        new Ingredient("Cream", 10, 0.25f);
+//        Ingredient decafCoffee =  new Ingredient("Decaf Coffee", 10, 0.75f);
+//        Ingredient espresso =     new Ingredient("Espresso", 10, 1.10f);
+//        Ingredient foamedMilk =   new Ingredient("Foamed Milk", 10, 0.35f);
+//        Ingredient steamedMilk =  new Ingredient("Steamed Milk", 10, 0.35f);
+//        Ingredient sugar =        new Ingredient("Sugar", 10, 0.25f);
+//        Ingredient whippedCream = new Ingredient("Whipped Cream", 10, 1.00f);
         
         ArrayList<Ingredient> inventory = new ArrayList<Ingredient>();
-        //Ingredient[] inventory = new Ingredient[9];
-        inventory.add(cocoa);
-        inventory.add(coffee);
-        inventory.add(cream);
-        inventory.add(decafCoffee);
-        inventory.add(espresso);
-        inventory.add(foamedMilk);
-        inventory.add(steamedMilk);
-        inventory.add(sugar);
-        inventory.add(whippedCream);
-//        inventory[0] = cocoa;
-//        inventory[1] = coffee;
-//        inventory[2] = cream;
-//        inventory[3] = decafCoffee;
-//        inventory[4] = espresso;
-//        inventory[5] = foamedMilk;
-//        inventory[6] = steamedMilk;
-//        inventory[7] = sugar;
-//        inventory[8] = whippedCream;
+        inventory.add(new Ingredient("Cocoa", 10, 0.90f));
+        inventory.add(new Ingredient("Coffee", 10, 0.75f));
+        inventory.add(new Ingredient("Cream", 10, 0.25f));
+        inventory.add(new Ingredient("Decaf Coffee", 10, 0.75f));
+        inventory.add(new Ingredient("Espresso", 10, 1.10f));
+        inventory.add(new Ingredient("Foamed Milk", 10, 0.35f));
+        inventory.add(new Ingredient("Steamed Milk", 10, 0.35f));
+        inventory.add(new Ingredient("Sugar", 10, 0.25f));
+        inventory.add(new Ingredient("Whipped Cream", 10, 1.00f));
         
         return inventory;
     }
