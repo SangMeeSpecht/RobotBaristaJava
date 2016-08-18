@@ -13,15 +13,15 @@ public class Drink {
     }
 	
     private Float calculatePrice(ArrayList<Ingredient> inventory){
-		Float price = 0f;
-		for(int i = 0; i < recipe.size(); i++){
-			for(int i2 = 0; i2 < inventory.size(); i2++){
-				if(recipe.get(i).name == inventory.get(i2).ingredient){
-					price += recipe.get(i).unit * inventory.get(i2).price;
-				}
-			} 
-		}
-		return price;
+    	Float price = 0f;
+    	for(int i = 0; i < recipe.size(); i++){
+    		for(int i2 = 0; i2 < inventory.size(); i2++){
+    			if(recipe.get(i).name == inventory.get(i2).ingredient){
+    				price += recipe.get(i).unit * inventory.get(i2).price;
+    			}
+    		} 
+    	}
+    	return price;
     }
 	
     private String formatPrice(Float price){
