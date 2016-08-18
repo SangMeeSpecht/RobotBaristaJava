@@ -8,8 +8,8 @@ public class Drink {
   	
 	public Drink(String name, ArrayList<Recipe> recipe, Boolean availability){
 	    this.name = name;
-		this.recipe = recipe;
-		this.availability = availability;
+	    this.recipe = recipe;
+	    this.availability = availability;
 	}
 	
 	private Float calculatePrice(ArrayList<Ingredient> inventory){
