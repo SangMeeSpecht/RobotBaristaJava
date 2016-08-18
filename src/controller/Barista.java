@@ -16,9 +16,9 @@ public class Barista {
         Inventory inventoryData = new Inventory();
         View view = new View();
     
-  	    this.inventory = inventoryData;
-  	    this.menu = menuData;
-  	    this.view = view;
+        this.inventory = inventoryData;
+        this.menu = menuData;
+        this.view = view;
     }
     
     public void run(){
