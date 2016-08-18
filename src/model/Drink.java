@@ -3,16 +3,16 @@ import java.util.ArrayList;
 
 public class Drink {
     public String name;
-	ArrayList<Recipe> recipe;
-	public Boolean availability;
+    ArrayList<Recipe> recipe;
+    public Boolean availability;
   	
-	public Drink(String name, ArrayList<Recipe> recipe, Boolean availability){
-	    this.name = name;
-	    this.recipe = recipe;
-	    this.availability = availability;
-	}
+    public Drink(String name, ArrayList<Recipe> recipe, Boolean availability){
+    	this.name = name;
+    	this.recipe = recipe;
+    	this.availability = availability;
+    }
 	
-	private Float calculatePrice(ArrayList<Ingredient> inventory){
+    private Float calculatePrice(ArrayList<Ingredient> inventory){
 		Float price = 0f;
 		for(int i = 0; i < recipe.size(); i++){
 			for(int i2 = 0; i2 < inventory.size(); i2++){
@@ -22,15 +22,15 @@ public class Drink {
 			} 
 		}
 		return price;
-	}
+    }
 	
-	private String formatPrice(Float price){
-	    return String.format("%.2f", price);
-	}
+    private String formatPrice(Float price){
+    	return String.format("%.2f", price);
+    }
 	
-	public String price(ArrayList<Ingredient> inventory){
-		return formatPrice(calculatePrice(inventory));
-	}
+    public String price(ArrayList<Ingredient> inventory){
+    	return formatPrice(calculatePrice(inventory));
+    }
 	
     public boolean drinkAvailability(){
         if(availability == true){
